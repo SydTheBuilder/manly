@@ -119,10 +119,11 @@
   }
   .swatch-row{
     display:flex;
-    gap:12px;
+    gap:26px;
     flex-wrap:wrap;
     justify-content:center;
-    max-width:520px;
+    max-width:560px;
+    padding-bottom:14px;
   }
   .swatch{
     width:52px;
@@ -135,17 +136,23 @@
     display:flex;
     align-items:center;
     justify-content:center;
+    flex:0 0 auto;
   }
   .swatch:hover{transform:scale(1.08);}
   .swatch.selected{border-color:var(--horizon);}
   .swatch.locked{opacity:0.55;}
   .swatch .lock{
     position:absolute;
-    bottom:-18px;
-    font-size:9px;
+    top:60px;
+    left:50%;
+    transform:translateX(-50%);
+    width:64px;
+    font-size:8px;
+    line-height:1.25;
     color:#9a9cb4;
-    white-space:nowrap;
-    letter-spacing:.3px;
+    white-space:normal;
+    text-align:center;
+    letter-spacing:.2px;
   }
   .swatch.sparkle{
     background:linear-gradient(135deg,#8fa8ff,#5ee7c8,#ff9f68,#ffd166);
